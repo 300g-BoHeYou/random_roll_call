@@ -2,7 +2,7 @@
 这是一款使用Python语言编写的随机点名程序，可以实现在课堂上随机选择一个学生。
 
 # 如何使用？
-1. 访问https://github.com/300g-BoHeYou/random_roll_call；
+1. 访问https://github.com/300g-BoHeYou/random_roll_call ；
 2. 点击界面右上角的 *code* 按钮，选择 *Donload ZIP*；
 3. 保存到电脑上并解压该zip文件；
 4. 将名字填入namelist.txt文档，每行一个；
