@@ -15,7 +15,7 @@
 2. 现在不会在点完一轮以前重复点名了
 
 # 提交bug和建议
-如果您在使用过程中发现了bug或有一些建议，可以在https://github.com/300g-BoHeYou/random_roll_call/issues上提交
+如果您在使用过程中发现了bug或有一些建议，可以在https://github.com/300g-BoHeYou/random_roll_call/issues 上提交
 
 # 联系作者
 - 邮箱：hongyi_332@foxmail.com
