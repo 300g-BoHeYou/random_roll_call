@@ -7,6 +7,7 @@ from random import choice
 class Main():
     def __init__(self):
         self.setup()
+        self.loadNamelist()
 
 
     def setup(self):
@@ -30,7 +31,8 @@ class Main():
         self.lb_name.move(50,50)
         
         self.lb_name.setText("<font size=5>点击下方按钮点名</font>")
-        
+
+    def loadNamelist(self):
         #读取名单
         if isfile("namelist.txt"):
             with open("namelist.txt", "r", encoding="utf-8") as f:
@@ -42,15 +44,16 @@ class Main():
         else:  #名单不存在
             x = open("namelist.txt","x") #创建名单
             x.close()
-            QMessageBox.warning(self.window,"名单不存在！","namelist.txt不存在，已自动创建")
-            exit()
+            QMessageBox.warning(self.window,"名单不存在！","namelist.txt不存在，已自动创建，请填写")
+            system(r'notepad namelist.txt')
+            self.loadNamelist()
         for n in range(len(self.name_list)):
             if not self.name_list[n]: #空值
                 del(self.name_list[n])
         if not self.name_list: #空名单
                 QMessageBox.warning(self.window,"名单为空！","名单中没有名字，请将姓名填入namelist.txt")
                 system(r'notepad namelist.txt')
-                exit()
+                self.loadNamelist()
         
         # print(self.name_list)
 
