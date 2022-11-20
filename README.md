@@ -20,6 +20,11 @@
 2022-4-24
 优化使用体验
 
+## v1.x
+### v1.0
+2022-11-20
+人名滚动
+
 # 提交bug和建议
 如果您在使用过程中发现了bug或有一些建议，可以在https://github.com/300g-BoHeYou/random_roll_call/issues 上提交
 
